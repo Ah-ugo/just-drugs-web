@@ -4,6 +4,7 @@ import { Box } from '@chakra-ui/react';
 import Header from './Header';
 import Footer from './Footer';
 import BottomNav from './BottomNav';
+import NavDrawer from './NavDrawer';
 import CartDrawer from './CartDrawer';
 import WhatsAppFab from './WhatsAppFab';
 
@@ -16,6 +17,7 @@ export default function AppShell({ children }) {
       <Box as="main" id="main" flex={1}>{children}</Box>
       <Footer />
       <BottomNav />
+      <NavDrawer />
       <CartDrawer />
       <WhatsAppFab />
     </Box>
