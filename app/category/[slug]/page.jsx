@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import CatalogView from '@/components/shop/CatalogView';
 import { loadCatalog } from '@/lib/catalog';
@@ -23,5 +24,9 @@ export default async function CategoryPage({ params, searchParams }) {
   const category = await getCategory(params.slug);
   if (!category) notFound();
   const data = await loadCatalog(searchParams, { category_slug: params.slug });
-  return <CatalogView {...data} category={category} title={category.name} emoji={category.emoji} subtitle={category.description} query={searchParams.q} failed={!data.ok} />;
+  return (
+    <Suspense fallback={null}>
+      <CatalogView {...data} category={category} title={category.name} emoji={category.emoji} subtitle={category.description} query={searchParams.q} failed={!data.ok} />
+    </Suspense>
+  );
 }

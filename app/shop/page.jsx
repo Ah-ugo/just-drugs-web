@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import CatalogView from '@/components/shop/CatalogView';
 import { loadCatalog } from '@/lib/catalog';
 
@@ -17,5 +18,9 @@ export default async function ShopPage({ searchParams }) {
   const data = await loadCatalog(searchParams);
   const flag = Object.keys(FEATURE_TITLES).find((k) => searchParams[k] === 'true');
   const title = searchParams.q ? 'Search results' : flag ? FEATURE_TITLES[flag] : 'All medicines';
-  return <CatalogView {...data} title={title} query={searchParams.q} failed={!data.ok} />;
+  return (
+    <Suspense fallback={null}>
+      <CatalogView {...data} title={title} query={searchParams.q} failed={!data.ok} />
+    </Suspense>
+  );
 }

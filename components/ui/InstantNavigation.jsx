@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState, useTransition } from 'react';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { Box } from '@chakra-ui/react';
 
 /**
@@ -11,7 +11,6 @@ import { Box } from '@chakra-ui/react';
  */
 export default function InstantNavigation() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const router = useRouter();
   const [progress, setProgress] = useState(0);
   const [visible, setVisible] = useState(false);
@@ -27,7 +26,7 @@ export default function InstantNavigation() {
       }, 200);
       return () => clearTimeout(timer);
     }
-  }, [pathname, searchParams]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [pathname]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     // 1. Instant prefetcher on hover / touch

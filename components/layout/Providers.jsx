@@ -1,4 +1,5 @@
 'use client';
+import { Suspense } from 'react';
 import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '@/theme';
@@ -12,7 +13,9 @@ export default function Providers({ settings, categories, children }) {
   return (
     <CacheProvider>
       <ChakraProvider theme={theme}>
-        <InstantNavigation />
+        <Suspense fallback={null}>
+          <InstantNavigation />
+        </Suspense>
         <StoreProvider settings={settings} categories={categories}>
           <AuthProvider>
             <CartProvider>
