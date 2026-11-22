@@ -1,0 +1,258 @@
+{
+ "search": [
+  "SearchNormal1",
+  "SearchNormal"
+ ],
+ "cart": [
+  "ShoppingCart",
+  "Bag2"
+ ],
+ "bag": [
+  "ShoppingBag",
+  "Bag2"
+ ],
+ "heart": [
+  "Heart"
+ ],
+ "home": [
+  "Home2",
+  "Home"
+ ],
+ "user": [
+  "Profile",
+  "User"
+ ],
+ "call": [
+  "Call"
+ ],
+ "mail": [
+  "Sms",
+  "Message"
+ ],
+ "pin": [
+  "Location"
+ ],
+ "truck": [
+  "Truck",
+  "TruckFast"
+ ],
+ "shield": [
+  "ShieldTick",
+  "ShieldSecurity"
+ ],
+ "verified": [
+  "Verify",
+  "TickCircle"
+ ],
+ "add": [
+  "Add"
+ ],
+ "minus": [
+  "Minus"
+ ],
+ "trash": [
+  "Trash"
+ ],
+ "right": [
+  "ArrowRight2",
+  "ArrowRight3"
+ ],
+ "left": [
+  "ArrowLeft2",
+  "ArrowLeft3"
+ ],
+ "down": [
+  "ArrowDown2",
+  "ArrowDown1"
+ ],
+ "up": [
+  "ArrowUp2",
+  "ArrowUp"
+ ],
+ "close": [
+  "CloseCircle"
+ ],
+ "check": [
+  "TickCircle"
+ ],
+ "info": [
+  "InfoCircle"
+ ],
+ "clock": [
+  "Clock",
+  "Timer1"
+ ],
+ "star": [
+  "Star1",
+  "Star"
+ ],
+ "box": [
+  "Box",
+  "BoxTick"
+ ],
+ "doc": [
+  "DocumentText",
+  "Document"
+ ],
+ "receipt": [
+  "Receipt2",
+  "ReceiptText",
+  "Receipt1",
+  "DocumentText"
+ ],
+ "download": [
+  "DocumentDownload",
+  "ImportCurve"
+ ],
+ "upload": [
+  "DocumentUpload",
+  "ExportCurve"
+ ],
+ "print": [
+  "Printer"
+ ],
+ "share": [
+  "Share",
+  "Send2"
+ ],
+ "copy": [
+  "Copy",
+  "CopySuccess"
+ ],
+ "category": [
+  "Category",
+  "Category2"
+ ],
+ "filter": [
+  "Filter",
+  "Sort"
+ ],
+ "camera": [
+  "Camera"
+ ],
+ "gallery": [
+  "Gallery",
+  "Image"
+ ],
+ "lock": [
+  "Lock"
+ ],
+ "eye": [
+  "Eye"
+ ],
+ "eyeoff": [
+  "EyeSlash"
+ ],
+ "logout": [
+  "Logout"
+ ],
+ "login": [
+  "Login"
+ ],
+ "tag": [
+  "Tag",
+  "DiscountShape"
+ ],
+ "danger": [
+  "Danger",
+  "Warning2"
+ ],
+ "edit": [
+  "Edit2",
+  "Edit"
+ ],
+ "refresh": [
+  "Refresh",
+  "Refresh2"
+ ],
+ "wallet": [
+  "Wallet",
+  "Wallet2"
+ ],
+ "card": [
+  "Card",
+  "CardPos"
+ ],
+ "gift": [
+  "Gift"
+ ],
+ "shop": [
+  "Shop",
+  "Building"
+ ],
+ "calendar": [
+  "Calendar",
+  "Calendar1"
+ ],
+ "health": [
+  "Health",
+  "Hospital"
+ ],
+ "menu": [
+  "HambergerMenu",
+  "Menu1",
+  "Menu"
+ ],
+ "support": [
+  "Headphone",
+  "MessageQuestion",
+  "Call"
+ ],
+ "scan": [
+  "Scan",
+  "Scanning"
+ ],
+ "settings": [
+  "Setting2",
+  "Setting"
+ ],
+ "chart": [
+  "Chart2",
+  "Chart",
+  "Diagram"
+ ],
+ "people": [
+  "People",
+  "Profile2User",
+  "Profile"
+ ],
+ "money": [
+  "Money",
+  "Wallet"
+ ],
+ "rotate": [
+  "Rotate",
+  "RotateLeft",
+  "Refresh"
+ ],
+ "zoomin": [
+  "SearchZoomIn",
+  "Add"
+ ],
+ "zoomout": [
+  "SearchZoomOut",
+  "Minus"
+ ],
+ "external": [
+  "ExportSquare",
+  "Export",
+  "Link"
+ ],
+ "bell": [
+  "Notification"
+ ],
+ "stock": [
+  "Box",
+  "Archive"
+ ],
+ "image": [
+  "Gallery",
+  "Image"
+ ],
+ "play": [
+  "Play"
+ ],
+ "flash": [
+  "Flash"
+ ]
+}

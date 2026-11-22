@@ -1,0 +1,65 @@
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+
+@keyframes jd-pop { 0% { transform: scale(.6); opacity: 0; } 60% { transform: scale(1.08); } 100% { transform: scale(1); opacity: 1; } }
+@keyframes jd-draw { to { stroke-dashoffset: 0; } }
+@keyframes jd-bump { 0%,100% { transform: scale(1); } 40% { transform: scale(1.35); } }
+@keyframes jd-shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+
+/* Fast responsive click & tap feedback (Facebook / iOS-like tactile feel) */
+html, body, a, button, [role="button"], input, select, textarea, .chakra-button {
+  touch-action: manipulation;
+}
+
+button:not([disabled]), 
+[role="button"]:not([aria-disabled="true"]), 
+.chakra-button:not([disabled]) {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.12s ease, background-color 0.12s ease, color 0.12s ease, opacity 0.12s ease;
+}
+
+button:not([disabled]):active, 
+[role="button"]:not([aria-disabled="true"]):active, 
+.chakra-button:not([disabled]):active {
+  transform: scale(0.93) !important;
+  transition: transform 0.015s ease-out !important; /* 15ms instant tactile response */
+}
+
+/* Links & interactive items click feedback */
+a:not([disabled]) {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: opacity 0.1s ease, transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.12s ease;
+}
+
+a:not([disabled]):active {
+  transform: scale(0.95) !important;
+  opacity: 0.72 !important;
+  transition: transform 0.015s ease-out, opacity 0.015s ease-out !important; /* 15ms instant response */
+}
+
+/* Card & linkbox hover lift and active press */
+.chakra-linkbox {
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.15s ease, border-color 0.15s ease !important;
+}
+
+.chakra-linkbox:active {
+  transform: scale(0.98) !important;
+  transition: transform 0.02s ease-out !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
+/* Invoices: print / "Save as PDF" */
+@page { size: A4; margin: 14mm; }
+@media print {
+  .no-print { display: none !important; }
+  html, body { background: #fff !important; }
+  .print-area { box-shadow: none !important; border: none !important; padding: 0 !important; max-width: 100% !important; }
+  a { text-decoration: none !important; color: inherit !important; }
+}

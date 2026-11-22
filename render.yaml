@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: just-drugs-web
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: API_URL
+        sync: false          # e.g. https://your-api.onrender.com/api/v1
+      - key: NEXT_PUBLIC_WHATSAPP_NUMBER
+        sync: false
+      - key: NEXT_PUBLIC_STORE_NAME
+        value: Just Drugs
+      - key: NODE_VERSION
+        value: 20
